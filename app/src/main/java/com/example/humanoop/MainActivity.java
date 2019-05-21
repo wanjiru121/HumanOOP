@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
             rose.sleep(8);
             rose.speak("How are you?");
             rose.birthday();
-        Log.d("Human","Your new age is" + rose.getAge());
+            Log.d("Human","Your new age is" + rose.getAge());
 
-            Anna one = new Anna("Anne",22,40);
+            Anna one = new Anna("Anne",22,40,23);
             one.eat();
-            Log.d("Anna","I am eating,my new weight is " + one.getWeight());
+            Log.d("Human","My new weight is " + one.getWeight());
             one.birthday();
-            Log.d("Anna","You are now " + one.getAge() + " " + "years old");
+             Log.d("Human","You are now " + one.getAge() + " " + "years old");
     }
 
     @Override

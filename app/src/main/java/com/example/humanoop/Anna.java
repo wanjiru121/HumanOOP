@@ -13,17 +13,27 @@ public class Anna extends Human {
         this.height = height;
     }
 
-    @Override
-    public void eat() {
-      super.eat();
-        weight = weight + 2;
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     @Override
-    public int birthday() {
-//        return super.birthday();
-        age = age + 4;
-        return age;
+    public void eat() {
+        super.eat();
+        int weight = getWeight();
+        weight = weight + 2;
+        setWeight(weight);
+    }
+
+    @Override
+    public void birthday() {
+     int annaBirthday = getAge() + 4;
+     setAge(annaBirthday);
+
     }
 }
 
